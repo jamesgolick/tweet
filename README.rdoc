@@ -1,0 +1,18 @@
+= Tempo CLI
+
+This is a CLI for sending commands to the tempo time tracker (keeptempoapp.com)
+
+== Configuration:
+
+Add a file at ~/.tempo that contains your tempo credentials in YAML form.
+
+i.e.
+
+  username: james
+  password: swordfish
+
+== Usage:
+  
+  $ tempo "command #project @tag"
+  
+Note: the syntax is defined by the app, not by the CLI.
