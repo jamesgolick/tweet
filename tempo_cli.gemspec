@@ -11,5 +11,6 @@ Gem::Specification.new do |s|
   s.bindir       = "bin"
   s.executables  = %w(tempo)
   s.authors      = ["James Golick"]
-  s.files        = ["lib/tempo_cli.rb", "bin/tempo", "README", "LICENSE", "test/test_helper.rb"]
+  s.files        = ["lib/tempo_cli.rb", "bin/tempo", "README.rdoc", "LICENSE", "test/test_helper.rb"]
+  s.add_dependency  'adamwiggins-rest-client'
 end
