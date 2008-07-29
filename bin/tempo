@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+abort("Usage: tempo 'command'") unless ARGV.length == 1
+
+require File.dirname(__FILE__)+'/../lib/tempo_cli'
+
+TempoCli.create_entry(ARGV.first)
