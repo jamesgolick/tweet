@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.executables  = %w(tweet)
   s.authors      = ["James Golick"]
   s.files        = ["lib/tweet.rb", "bin/tweet", "README.rdoc", "LICENSE", "test/test_helper.rb"]
+  s.add_dependency  'technoweenie-rest-client'
 end
