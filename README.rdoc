@@ -1,10 +1,10 @@
-= Tempo CLI
+= Tweet
 
-This is a CLI for sending commands to the tempo time tracker (keeptempoapp.com)
+This is a CLI for sending tweets to twitter.
 
 == Configuration:
 
-Add a file at ~/.tempo that contains your tempo credentials in YAML form.
+Add a file at ~/.tweet that contains your tempo credentials in YAML form.
 
 i.e.
 
@@ -13,6 +13,4 @@ i.e.
 
 == Usage:
   
-  $ tempo "command #project @tag"
-  
-Note: the syntax is defined by the app, not by the CLI.
+  $ tweet "going to walk the dog"
