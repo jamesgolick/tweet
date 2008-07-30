@@ -1,2 +1,2 @@
-require File.dirname(__FILE__)+'/../lib/tempo_cli'
+require File.dirname(__FILE__)+'/../lib/tweet'
 require 'expectations'

@@ -3,16 +3,16 @@ require 'rubygems'
 require 'activesupport'
 require 'rest_client'
 
-module TempoCli
-  CONFIG_FILE = ENV['HOME']+'/.tempo'
+module Tweet
+  CONFIG_FILE = ENV['HOME']+'/.tweet'
   
   class << self
     attr_accessor :username, :password
     
-    def create_entry(command)
+    def create_status(status)
       get_credentials!
-      resource = RestClient::Resource.new 'https://app.keeptempo.com/entries', username, password
-      resource.post({:command => command}.to_xml(:root => 'entry'), :content_type => 'application/xml', :accept => 'application/xml')
+      resource = RestClient::Resource.new 'https://twitter.com/statuses/update', username, password
+      resource.post({:status => status}.to_xml(:root => 'entry'), :content_type => 'application/xml', :accept => 'application/xml')
     end
     
     def get_credentials!
