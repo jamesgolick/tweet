@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+abort("Usage: tweet 'command'") unless ARGV.length == 1
+
+require File.dirname(__FILE__)+'/../lib/tweet'
+
+Tweet.create_entry(ARGV.first)
