@@ -12,7 +12,7 @@ module Tweet
     def create_status(status)
       get_credentials!
       resource = RestClient::Resource.new 'http://twitter.com/statuses/update.xml', username, password
-      resource.post(:status => status, :content_type => 'application/xml', :accept => 'application/xml')
+      resource.post(:status => status, :source => 'tweetgem', :content_type => 'application/xml', :accept => 'application/xml')
     end
     
     def get_credentials!
