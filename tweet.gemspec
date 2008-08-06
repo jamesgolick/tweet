@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = "tweet"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.date         = "2008-07-28"
   s.summary      = "Update your twitter status from the command line."
   s.email        = "james@giraffesoft.ca"
